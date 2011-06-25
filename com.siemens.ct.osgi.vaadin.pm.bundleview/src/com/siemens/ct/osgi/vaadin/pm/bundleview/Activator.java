@@ -36,7 +36,7 @@ public class Activator implements BundleActivator, SynchronousBundleListener {
 		// Hack for adding only our relevant bundles to the list
 		for (Bundle bundle : allBundles) {
 			String symbolicName = bundle.getSymbolicName();
-			if ((symbolicName.startsWith("com.siemens.ct.osgi.vaadin.pm")|| symbolicName.startsWith("al.smc.osgi")|| symbolicName
+			if ((symbolicName.startsWith("com.siemens.ct.osgi.vaadin.pm")|| symbolicName.startsWith("al.gov.asp.smc")|| symbolicName
 			      .startsWith("com.siemens.ct.pm.model."))
 			      && !((symbolicName.contains("main")
 			            || symbolicName.contains("theme")
