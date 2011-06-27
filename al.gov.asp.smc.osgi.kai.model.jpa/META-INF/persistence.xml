@@ -9,7 +9,6 @@
 				<property name="javax.persistence.jdbc.user" value="test"/>
 				<property name="javax.persistence.jdbc.password" value="test"/>
 				<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
-				<property name="eclipselink.exclude-eclipselink-orm" value="false"/>
 			</properties>
 		</persistence-unit>
 	</persistence>
