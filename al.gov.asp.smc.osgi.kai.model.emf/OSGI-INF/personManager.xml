@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="al.gov.asp.smc.osgi.kai.model.emf">
+   <implementation class="al.gov.asp.smc.osgi.kai.model.emf.provider.PersonManager"/>
+   <service>
+      <provide interface="com.siemens.ct.pm.model.IPersonManager"/>
+   </service>
+</scr:component>

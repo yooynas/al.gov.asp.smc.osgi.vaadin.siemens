@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/al.gov.asp.smc.osgi.kai.model.emf/src"
+    modelPluginID="al.gov.asp.smc.osgi.kai.model.emf" modelName="ThisDomain" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>ThisDomain.ecore</foreignModel>
+  <genPackages prefix="Thisdomain" basePackage="al.gov.asp.smc.osgi.kai.model.emf.gen"
+      disposableProviderFactory="true" ecorePackage="ThisDomain.ecore#/">
+    <genClasses ecoreClass="ThisDomain.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ThisDomain.ecore#//Person/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ThisDomain.ecore#//Person/lastName"/>
+    </genClasses>
+    <genClasses ecoreClass="ThisDomain.ecore#//Company">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ThisDomain.ecore#//Company/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ThisDomain.ecore#//Company/employsPerson"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
